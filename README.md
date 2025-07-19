@@ -37,8 +37,9 @@ A comprehensive implementation of a production-ready NLP system leveraging deep 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/nlp-system.git
-   cd nlp-system
+   git clone https://github.com/Hamza3075/Warp.git
+   cd Warp
+   cd SimpleAI
    ```
 
 2. Create and activate a virtual environment:
