@@ -30,8 +30,7 @@ A comprehensive implementation of a production-ready NLP system leveraging deep 
 ├── config.json           # Configuration file
 ├── requirements.txt      # Python dependencies
 ├── Dockerfile            # Docker container definition
-├── docker-compose.yml    # Docker compose for deployment
-└── README.md             # Project documentation
+└── docker-compose.yml    # Docker compose for deployment
 ```
 
 ## Installation
