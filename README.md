@@ -1,5 +1,4 @@
 # Warp
----
 A comprehensive implementation of a production-ready NLP system leveraging deep learning and transformer architecture. This system includes everything needed to train, evaluate, and deploy NLP models for various tasks such as text classification and sequence generation.
 
 ## Features
