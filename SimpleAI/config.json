@@ -1,0 +1,50 @@
+{
+    "model": {
+      "vocab_size": 30522,
+      "d_model": 768,
+      "nhead": 12,
+      "num_encoder_layers": 12,
+      "dim_feedforward": 3072,
+      "dropout": 0.1,
+      "max_seq_length": 512,
+      "pad_idx": 0
+    },
+    "training": {
+      "task": "classification",
+      "batch_size": 32,
+      "learning_rate": 5e-5,
+      "num_epochs": 3,
+      "train_file": "/content/drive/MyDrive/SimpleAI/data/train.csv",
+      "eval_file": "/content/drive/MyDrive/SimpleAI/data/eval.csv",
+      "test_file": "/content/drive/MyDrive/SimpleAI/data/test.csv",
+      "checkpoint_dir": "./checkpoints",
+      "use_wandb": false,
+      "warmup_ratio": 0.1,
+      "weight_decay": 0.01,
+      "gradient_clip": 1.0,
+      "eval_steps": 500
+    },
+    "inference": {
+      "model_path": "./checkpoints/final_model",
+      "tokenizer_path": null,
+      "cache_size": 1000,
+      "batch_size": 32,
+      "max_length": 512
+    },
+    "api": {
+      "host": "0.0.0.0",
+      "port": 8000,
+      "enable_docs": true,
+      "request_timeout": 60
+    },
+    "logging": {
+      "level": "INFO",
+      "file": "nlp_system.log",
+      "console": true
+    },
+    "feedback_loop": {
+      "enabled": true,
+      "storage_path": "./feedback_data",
+      "retraining_threshold": 1000
+    }
+  }
